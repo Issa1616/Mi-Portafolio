@@ -153,7 +153,7 @@
                 <img
                     src="assets/img/inicio.jpeg"
                     alt="Foto de perfil"
-                    class="w-full max-w-[500px] object-cover"
+                    class="w-full max-w-[500px] object-cover rounded-xl"
                 >
 
             </div>
@@ -380,32 +380,184 @@
         </div>
 
 
-        <div class="space-y-5">
+        <div class="relative">
 
-            <article
-                class="grid md:grid-cols-[180px_1fr] gap-6 border-b border-[#20391d]/30 pb-6"
+            <button
+                id="prevTrabajo"
+                type="button"
+                aria-label="Trabajo anterior"
+                class="absolute left-0 top-1/2 -translate-y-1/2 z-10
+                       w-10 h-10 md:w-12 md:h-12
+                       rounded-full bg-[#20391d] text-white
+                       flex items-center justify-center
+                       text-2xl
+                       hover:bg-[#8b9251]
+                       transition
+                       shadow-lg"
+            >
+                &#10094;
+            </button>
+
+
+            <div
+                id="carruselTrabajos"
+                class="overflow-hidden mx-10 md:mx-14"
             >
 
-                <div class="text-xl font-bold">
-                    2026
+
+                <div
+                    id="listaTrabajos"
+                    class="flex gap-6 transition-transform duration-500 ease-in-out"
+                >
+
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#dfe3f5] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/gobson.png"
+                            alt="Gobierno Sonora"
+                            class="w-full h-52 object-cover rounded-xl"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                2026
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Desarrollo de un sistema para el Gobierno del Estado de Sonora
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Participación en el desarrollo de un sistema de archivo para el Gobierno del Estado de Sonora, 
+                                colaborando en el desarrollo e implementación de funcionalidades del sistema. Tecnologías 
+                                utilizadas: Angular, .NET y PostgreSQL.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#e9e7c9] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/practicas.jpeg"
+                            alt="Practicas"
+                            class="w-full h-52 object-cover rounded-xl"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Ago - Dic 2025
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Prácticas Profesionales — Hub de Innovación
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Durante mis prácticas profesionales participé en proyectos de innovación y tecnología, 
+                                trabajando principalmente con un robot llamado “mulita”. Colaboré en 
+                                actividades relacionadas con su configuración, programación y pruebas de funcionamiento, 
+                                adquiriendo experiencia práctica en robótica y en el desarrollo de soluciones tecnológicas.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#dfe3f5] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/futcho.jpeg"
+                            alt="Intercambio académico"
+                            class="w-full h-52 object-cover rounded-xl"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Octubre 2025
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Torneo de Fútbol Robótico
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Participación en un torneo de fútbol con robots, 
+                                donde cada participante desarrolló su propio robot desde cero. 
+                                El proyecto incluyó el diseño de la estructura, la impresión de las piezas y 
+                                la programación necesaria para controlar su funcionamiento durante los partidos. 
+                                Esta experiencia permitió aplicar conocimientos de diseño, fabricación, 
+                                programación, resolución de problemas y trabajo en equipo.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#e9e7c9] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/.jpeg"
+                            alt="CIAT"
+                            class="w-full h-52 object-cover rounded-xl"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Noviembre 2026
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Relaci CIAT
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Evento universitario en el que se presentaron diversos proyectos de la Universidad de Navojoa. 
+                                Como parte de mi participación, tuve la oportunidad de presentar 
+                                proyectos desarrollados durante mi formación académica, fortaleciendo mis habilidades de comunicación, presentación y trabajo en equipo.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
                 </div>
 
-                <div>
-
-                    <h3 class="text-2xl font-bold uppercase">
-                        Desarrollo de un sistema para el Gobierno del Estado de Sonora
-                    </h3>
-
-                    <p class="mt-2 text-gray-600">
-                        Participación en el desarrollo de un sistema de archivo
-                        para el Gobierno del Estado de Sonora, colaborando en
-                        el desarrollo e implementación de funcionalidades del
-                        sistema. Tecnologías utilizadas: Angular, .NET y PostgreSQL.
-                    </p>
-
-                </div>
-
-            </article>
+            </div>
+        
+            <button
+                id="nextTrabajo"
+                type="button"
+                aria-label="Siguiente trabajo"
+                class="absolute right-0 top-1/2 -translate-y-1/2 z-10
+                       w-10 h-10 md:w-12 md:h-12
+                       rounded-full bg-[#20391d] text-white
+                       flex items-center justify-center
+                       text-2xl
+                       hover:bg-[#8b9251]
+                       transition
+                       shadow-lg"
+            >
+                &#10095;
+            </button>
 
         </div>
 
@@ -530,33 +682,69 @@
                     </article>
 
                     <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px) bg-[#e9e7b8]] bg-[#dfe3f5] rounded-xl overflow-hidden"
+                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#dfe3f5] rounded-xl overflow-hidden"
                     >
 
                         <img
-                            src="assets/img/evento-1.jpg"
-                            alt="Congreso de Tecnología"
+                            src="assets/img/futcho.jpeg"
+                            alt="Intercambio académico"
                             class="w-full h-52 object-cover rounded-xl"
                         >
 
                         <div class="p-6">
 
                             <p class="text-sm uppercase">
-                                02-07 Noviembre 2026
+                                Octubre 2025
                             </p>
 
                             <h3 class="text-2xl font-bold uppercase mt-2">
-                                Congreso de Tecnología
+                                Torneo de Fútbol Robótico
                             </h3>
 
                             <p class="mt-3 text-gray-600">
-                                Participación en evento relacionado con
-                                tecnología, innovación y desarrollo.
+                                Participación en un torneo de fútbol con robots, 
+                                donde cada participante desarrolló su propio robot desde cero. 
+                                El proyecto incluyó el diseño de la estructura, la impresión de las piezas y 
+                                la programación necesaria para controlar su funcionamiento durante los partidos. 
+                                Esta experiencia permitió aplicar conocimientos de diseño, fabricación, 
+                                programación, resolución de problemas y trabajo en equipo.
                             </p>
 
                         </div>
 
                     </article>
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#e9e7c9] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/.jpeg"
+                            alt="CIAT"
+                            class="w-full h-52 object-cover rounded-xl"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Noviembre 2026
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Relaci CIAT
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Evento universitario en el que se presentaron diversos proyectos de la Universidad de Navojoa. 
+                                Como parte de mi participación, tuve la oportunidad de presentar 
+                                proyectos desarrollados durante mi formación académica, fortaleciendo mis habilidades de comunicación, presentación y trabajo en equipo.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
 
                 </div>
 
