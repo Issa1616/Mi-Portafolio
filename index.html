@@ -10,6 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
         rel="stylesheet"
@@ -43,6 +44,7 @@
     </style>
 </head>
 
+
 <body class="bg-[#b8c8f4] text-[#20391d]">
 
 <div class="max-w-5xl mx-auto my-0 md:my-8 bg-[#f7f0e5] shadow-2xl overflow-hidden md:rounded-2xl">
@@ -58,6 +60,7 @@
             >
                 IVAS
             </a>
+
 
             <div class="hidden md:flex gap-7 text-sm uppercase font-medium">
 
@@ -105,6 +108,7 @@
 
             </div>
 
+
             <button
                 id="menuButton"
                 class="md:hidden text-2xl"
@@ -121,24 +125,35 @@
 
             <div class="flex flex-col gap-4 uppercase text-sm">
 
-                <a href="#inicio">Home</a>
+                <a href="#inicio">
+                    Home
+                </a>
 
-                <a href="#proyectos">Proyectos</a>
+                <a href="#proyectos">
+                    Proyectos
+                </a>
 
-                <a href="#youtube">YouTube</a>
+                <a href="#youtube">
+                    YouTube
+                </a>
 
-                <a href="#trabajos">Trabajos</a>
+                <a href="#trabajos">
+                    Trabajos
+                </a>
 
-                <a href="#eventos">Eventos</a>
+                <a href="#eventos">
+                    Eventos
+                </a>
 
-                <a href="#contacto">Contacto</a>
+                <a href="#contacto">
+                    Contacto
+                </a>
 
             </div>
 
         </div>
 
     </header>
-
 
     <section
         id="inicio"
@@ -157,6 +172,7 @@
                 >
 
             </div>
+
 
             <div class="px-8 md:px-12 py-12 order-1 md:order-2">
 
@@ -190,7 +206,6 @@
 
     </section>
 
-
     <section
         id="proyectos"
         class="px-6 md:px-12 py-12 border-b border-[#20391d]/40"
@@ -209,97 +224,370 @@
         </div>
 
 
-        <div class="grid md:grid-cols-3 gap-5">
+        <div class="relative">
 
-            <article
-                class="bg-[#e9e7c9] rounded-xl p-6 min-h-[260px] flex flex-col"
+            <button
+                id="prevProyecto"
+                type="button"
+                aria-label="Proyecto anterior"
+                class="absolute left-0 top-1/2 -translate-y-1/2 z-10
+                       w-10 h-10 md:w-12 md:h-12
+                       rounded-full bg-[#20391d] text-white
+                       flex items-center justify-center
+                       text-2xl
+                       hover:bg-[#8b9251]
+                       transition
+                       shadow-lg"
+            >
+                &#10094;
+            </button>
+
+            <div
+                id="carruselProyectos"
+                class="overflow-hidden mx-10 md:mx-14"
             >
 
-                <div class="text-5xl mb-5"></div>
+                <div
+                    id="listaProyectos"
+                    class="flex gap-6 transition-transform duration-500 ease-in-out"
+                >
 
-                <h3 class="text-2xl font-bold uppercase leading-tight">
-                    Título
-                </h3>
-
-                <p class="mt-3 text-sm text-gray-600">
-                    Descripción.
-                </p>
-
-                <div class="mt-auto pt-5 flex gap-4 text-xs uppercase">
-
-                    <a
-                        href="https://github.com/Issa1616"
-                        target="_blank"
-                        class="font-semibold underline"
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#e9e7c9] rounded-xl overflow-hidden"
                     >
-                        GitHub
-                    </a>
+
+                        <img
+                            src="assets/img/Yoyaku.jpeg"
+                            alt="Proyecto Yoyaku"
+                            class="w-full h-52 object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Mayo 2026
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Yoyaku
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Aplicación móvil para la gestión de clases y
+                                reservaciones. El proyecto cuenta con diferentes
+                                tipos de usuario y utiliza Flutter para el
+                                desarrollo de la aplicación, junto con Firebase
+                                y Supabase para los servicios backend.
+                            </p>
+
+
+                            <div class="mt-5 flex flex-wrap gap-2 text-xs uppercase">
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Flutter
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Firebase
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Supabase
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/Issa1616/yoyaku"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block mt-5 text-sm uppercase font-semibold underline"
+                            >
+                                Ver en GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#dfe3f5] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/Timeslot.jpeg"
+                            alt="Timeslot"
+                            class="w-full h-52 object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Noviembre 2025
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Timeslot
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Sistema de gestión de horarios y reservas  
+                                desarrollado para optimizar la programación  
+                                de citas y disponibilidad de recursos,  
+                                integrando un chatbot de IA para automatizar tareas.
+                            </p>
+
+
+                            <div class="mt-5 flex flex-wrap gap-2 text-xs uppercase">
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    React Native
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Expo
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Node.js
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/Issa1616/TimeSlot"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block mt-5 text-sm uppercase font-semibold underline"
+                            >
+                                Ver en GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#e9e7c9] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/Calculadora.png"
+                            alt="Calculadora"
+                            class="w-full h-52 object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                2024
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Calculadora
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Calculadora de expresiones matemáticas  
+                                desarrollada en Java para implementar  
+                                estructuras de datos y procesar operaciones  
+                                mediante pilas y colas.
+                            </p>
+
+
+                            <div class="mt-5 flex flex-wrap gap-2 text-xs uppercase">
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Java
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Data Structures
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Stack
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Queue
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/Issa1616/Calculator"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block mt-5 text-sm uppercase font-semibold underline"
+                            >
+                                Ver en GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#dfe3f5] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/EscuelaMusica.png"
+                            alt="Sistema Escuela de Musica"
+                            class="w-full h-52 object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Noviembre 2024
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Sistema Escuela de Musica
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Plataforma web para una escuela de música  
+                                desarrollada para facilitar la gestión  
+                                de tareas y registrar el tiempo de práctica  
+                                de los estudiantes.
+                            </p>
+
+
+                            <div class="mt-5 flex flex-wrap gap-2 text-xs uppercase">
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    HTML
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    CSS
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    JavaScript
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    PHP
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    MySQL
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Bootstrap
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/Issa1616/music-school-platform"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block mt-5 text-sm uppercase font-semibold underline"
+                            >
+                                Ver en GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <article
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#e9e7c9] rounded-xl overflow-hidden"
+                    >
+
+                        <img
+                            src="assets/img/BrickBreaker.png"
+                            alt="Brick Breacker"
+                            class="w-full h-52 object-cover"
+                        >
+
+                        <div class="p-6">
+
+                            <p class="text-sm uppercase">
+                                Mayo 2026
+                            </p>
+
+                            <h3 class="text-2xl font-bold uppercase mt-2">
+                                Brick Breacker
+                            </h3>
+
+                            <p class="mt-3 text-gray-600">
+                                Videojuego tipo Brick Breaker  
+                                desarrollado en Unity como proyecto académico,  
+                                con diferentes niveles y mecánicas que aumentan  
+                                la dificultad conforme avanza el jugador.
+                            </p>
+
+
+                            <div class="mt-5 flex flex-wrap gap-2 text-xs uppercase">
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Unity
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    C#
+                                </span>
+
+                                <span class="border border-[#20391d] px-2 py-1 rounded">
+                                    Unity Physics
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/Issa1616/BrickBreacker"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block mt-5 text-sm uppercase font-semibold underline"
+                            >
+                                Ver en GitHub →
+                            </a>
+
+                        </div>
+
+                    </article>
+
 
                 </div>
 
-            </article>
+            </div>
 
-            <article
-                class="bg-[#dfe3f5] rounded-xl p-6 min-h-[260px] flex flex-col"
+            <button
+                id="nextProyecto"
+                type="button"
+                aria-label="Siguiente proyecto"
+                class="absolute right-0 top-1/2 -translate-y-1/2 z-10
+                       w-10 h-10 md:w-12 md:h-12
+                       rounded-full bg-[#20391d] text-white
+                       flex items-center justify-center
+                       text-2xl
+                       hover:bg-[#8b9251]
+                       transition
+                       shadow-lg"
             >
-
-                <div class="text-5xl mb-5"></div>
-
-                <h3 class="text-2xl font-bold uppercase leading-tight">
-                    Título
-                </h3>
-
-                <p class="mt-3 text-sm text-gray-600">
-                    Descripción.
-                </p>
-
-                <div class="mt-auto pt-5 flex gap-4 text-xs uppercase">
-
-                    <a
-                        href="https://github.com/Issa1616"
-                        target="_blank"
-                        class="font-semibold underline"
-                    >
-                        GitHub
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article
-                class="bg-[#e9e7b8] rounded-xl p-6 min-h-[260px] flex flex-col"
-            >
-
-                <div class="text-5xl mb-5"></div>
-
-                <h3 class="text-2xl font-bold uppercase leading-tight">
-                    Título
-                </h3>
-
-                <p class="mt-3 text-sm text-gray-600">
-                    Descripción.
-                </p>
-
-                <div class="mt-auto pt-5 flex gap-4 text-xs uppercase">
-
-                    <a
-                        href="https://github.com/Issa1616"
-                        target="_blank"
-                        class="font-semibold underline"
-                    >
-                        GitHub
-                    </a>
-
-                </div>
-
-            </article>
+                &#10095;
+            </button>
 
         </div>
 
     </section>
-
 
     <section
         id="youtube"
@@ -323,6 +611,7 @@
 
             <div class="grid md:grid-cols-2 gap-8 items-center">
 
+
                 <div class="aspect-video bg-black rounded-lg overflow-hidden">
 
                     <iframe
@@ -333,6 +622,7 @@
                     ></iframe>
 
                 </div>
+
 
                 <div>
 
@@ -349,7 +639,10 @@
                     <a
                         href="https://youtube.com/"
                         target="_blank"
-                        class="inline-block mt-6 border-2 border-[#20391d] px-6 py-2 rounded-md uppercase font-semibold hover:bg-[#20391d] hover:text-white transition"
+                        rel="noopener noreferrer"
+                        class="inline-block mt-6 border-2 border-[#20391d]
+                               px-6 py-2 rounded-md uppercase font-semibold
+                               hover:bg-[#20391d] hover:text-white transition"
                     >
                         Ver canal
                     </a>
@@ -382,6 +675,7 @@
 
         <div class="relative">
 
+
             <button
                 id="prevTrabajo"
                 type="button"
@@ -404,21 +698,20 @@
                 class="overflow-hidden mx-10 md:mx-14"
             >
 
-
                 <div
                     id="listaTrabajos"
                     class="flex gap-6 transition-transform duration-500 ease-in-out"
                 >
 
-
                     <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#dfe3f5] rounded-xl overflow-hidden"
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#dfe3f5] rounded-xl overflow-hidden"
                     >
 
                         <img
                             src="assets/img/gobson.png"
-                            alt="Gobierno Sonora"
-                            class="w-full h-52 object-cover rounded-xl"
+                            alt="Gobierno de Sonora"
+                            class="w-full h-52 object-cover"
                         >
 
                         <div class="p-6">
@@ -432,8 +725,10 @@
                             </h3>
 
                             <p class="mt-3 text-gray-600">
-                                Participación en el desarrollo de un sistema de archivo para el Gobierno del Estado de Sonora, 
-                                colaborando en el desarrollo e implementación de funcionalidades del sistema. Tecnologías 
+                                Participación en el desarrollo de un sistema
+                                de archivo para el Gobierno del Estado de Sonora,
+                                colaborando en el desarrollo e implementación
+                                de funcionalidades del sistema. Tecnologías
                                 utilizadas: Angular, .NET y PostgreSQL.
                             </p>
 
@@ -441,15 +736,15 @@
 
                     </article>
 
-
                     <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#e9e7c9] rounded-xl overflow-hidden"
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#e9e7c9] rounded-xl overflow-hidden"
                     >
 
                         <img
                             src="assets/img/practicas.jpeg"
-                            alt="Practicas"
-                            class="w-full h-52 object-cover rounded-xl"
+                            alt="Prácticas profesionales"
+                            class="w-full h-52 object-cover"
                         >
 
                         <div class="p-6">
@@ -463,75 +758,14 @@
                             </h3>
 
                             <p class="mt-3 text-gray-600">
-                                Durante mis prácticas profesionales participé en proyectos de innovación y tecnología, 
-                                trabajando principalmente con un robot llamado “mulita”. Colaboré en 
-                                actividades relacionadas con su configuración, programación y pruebas de funcionamiento, 
-                                adquiriendo experiencia práctica en robótica y en el desarrollo de soluciones tecnológicas.
-
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                    <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#dfe3f5] rounded-xl overflow-hidden"
-                    >
-
-                        <img
-                            src="assets/img/futcho.jpeg"
-                            alt="Intercambio académico"
-                            class="w-full h-52 object-cover rounded-xl"
-                        >
-
-                        <div class="p-6">
-
-                            <p class="text-sm uppercase">
-                                Octubre 2025
-                            </p>
-
-                            <h3 class="text-2xl font-bold uppercase mt-2">
-                                Torneo de Fútbol Robótico
-                            </h3>
-
-                            <p class="mt-3 text-gray-600">
-                                Participación en un torneo de fútbol con robots, 
-                                donde cada participante desarrolló su propio robot desde cero. 
-                                El proyecto incluyó el diseño de la estructura, la impresión de las piezas y 
-                                la programación necesaria para controlar su funcionamiento durante los partidos. 
-                                Esta experiencia permitió aplicar conocimientos de diseño, fabricación, 
-                                programación, resolución de problemas y trabajo en equipo.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                    <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#e9e7c9] rounded-xl overflow-hidden"
-                    >
-
-                        <img
-                            src="assets/img/.jpeg"
-                            alt="CIAT"
-                            class="w-full h-52 object-cover rounded-xl"
-                        >
-
-                        <div class="p-6">
-
-                            <p class="text-sm uppercase">
-                                Noviembre 2026
-                            </p>
-
-                            <h3 class="text-2xl font-bold uppercase mt-2">
-                                Relaci CIAT
-                            </h3>
-
-                            <p class="mt-3 text-gray-600">
-                                Evento universitario en el que se presentaron diversos proyectos de la Universidad de Navojoa. 
-                                Como parte de mi participación, tuve la oportunidad de presentar 
-                                proyectos desarrollados durante mi formación académica, fortaleciendo mis habilidades de comunicación, presentación y trabajo en equipo.
-
+                                Durante mis prácticas profesionales participé
+                                en proyectos de innovación y tecnología,
+                                trabajando principalmente con un robot llamado
+                                “mulita”. Colaboré en actividades relacionadas
+                                con su configuración, programación y pruebas
+                                de funcionamiento, adquiriendo experiencia
+                                práctica en robótica y desarrollo de soluciones
+                                tecnológicas.
                             </p>
 
                         </div>
@@ -542,7 +776,8 @@
                 </div>
 
             </div>
-        
+
+
             <button
                 id="nextTrabajo"
                 type="button"
@@ -563,7 +798,6 @@
 
     </section>
 
-
     <section
         id="eventos"
         class="px-6 md:px-12 py-12 border-b border-[#20391d]/40"
@@ -583,6 +817,7 @@
 
 
         <div class="relative">
+
 
             <button
                 id="prevEvento"
@@ -606,21 +841,20 @@
                 class="overflow-hidden mx-10 md:mx-14"
             >
 
-
                 <div
                     id="listaEventos"
                     class="flex gap-6 transition-transform duration-500 ease-in-out"
                 >
 
-
                     <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#dfe3f5] rounded-xl overflow-hidden"
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#dfe3f5] rounded-xl overflow-hidden"
                     >
 
                         <img
                             src="assets/img/Intercambio.jpeg"
                             alt="Intercambio académico"
-                            class="w-full h-52 object-cover rounded-xl"
+                            class="w-full h-52 object-cover"
                         >
 
                         <div class="p-6">
@@ -640,24 +874,22 @@
                                 de conocer nuevas perspectivas, compartir
                                 experiencias con otros estudiantes y
                                 fortalecer habilidades de comunicación,
-                                adaptación y trabajo en equipo. Esta
-                                experiencia contribuyó a mi desarrollo
-                                académico y personal.
+                                adaptación y trabajo en equipo.
                             </p>
 
                         </div>
 
                     </article>
 
-
                     <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#e9e7c9] rounded-xl overflow-hidden"
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#e9e7c9] rounded-xl overflow-hidden"
                     >
 
                         <img
                             src="assets/img/expoinnova.jpeg"
                             alt="ExpoInnova"
-                            class="w-full h-52 object-cover rounded-xl"
+                            class="w-full h-52 object-cover"
                         >
 
                         <div class="p-6">
@@ -671,10 +903,12 @@
                             </h3>
 
                             <p class="mt-3 text-gray-600">
-                                Evento universitario en el que se presentaron diversos proyectos de la Universidad de Navojoa. 
-                                Como parte de mi participación, tuve la oportunidad de presentar 
-                                proyectos desarrollados durante mi formación académica, fortaleciendo mis habilidades de comunicación, presentación y trabajo en equipo.
-
+                                Evento universitario en el que se presentaron
+                                diversos proyectos de la Universidad de Navojoa.
+                                Como parte de mi participación, tuve la oportunidad
+                                de presentar proyectos desarrollados durante mi
+                                formación académica, fortaleciendo mis habilidades
+                                de comunicación, presentación y trabajo en equipo.
                             </p>
 
                         </div>
@@ -682,13 +916,14 @@
                     </article>
 
                     <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#dfe3f5] rounded-xl overflow-hidden"
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#dfe3f5] rounded-xl overflow-hidden"
                     >
 
                         <img
                             src="assets/img/futcho.jpeg"
-                            alt="Intercambio académico"
-                            class="w-full h-52 object-cover rounded-xl"
+                            alt="Torneo de fútbol robótico"
+                            class="w-full h-52 object-cover"
                         >
 
                         <div class="p-6">
@@ -702,12 +937,12 @@
                             </h3>
 
                             <p class="mt-3 text-gray-600">
-                                Participación en un torneo de fútbol con robots, 
-                                donde cada participante desarrolló su propio robot desde cero. 
-                                El proyecto incluyó el diseño de la estructura, la impresión de las piezas y 
-                                la programación necesaria para controlar su funcionamiento durante los partidos. 
-                                Esta experiencia permitió aplicar conocimientos de diseño, fabricación, 
-                                programación, resolución de problemas y trabajo en equipo.
+                                Participación en un torneo de fútbol con robots,
+                                donde cada participante desarrolló su propio robot
+                                desde cero. El proyecto incluyó el diseño de la
+                                estructura, la impresión de las piezas y la
+                                programación necesaria para controlar su
+                                funcionamiento durante los partidos.
                             </p>
 
                         </div>
@@ -715,13 +950,14 @@
                     </article>
 
                     <article
-                        class="shrink-0 w-full md:w-[calc(50%-12px)] bg-[#e9e7c9] rounded-xl overflow-hidden"
+                        class="shrink-0 w-full md:w-[calc(50%-12px)]
+                               bg-[#e9e7c9] rounded-xl overflow-hidden"
                     >
 
                         <img
                             src="assets/img/.jpeg"
                             alt="CIAT"
-                            class="w-full h-52 object-cover rounded-xl"
+                            class="w-full h-52 object-cover"
                         >
 
                         <div class="p-6">
@@ -735,10 +971,11 @@
                             </h3>
 
                             <p class="mt-3 text-gray-600">
-                                Evento universitario en el que se presentaron diversos proyectos de la Universidad de Navojoa. 
-                                Como parte de mi participación, tuve la oportunidad de presentar 
-                                proyectos desarrollados durante mi formación académica, fortaleciendo mis habilidades de comunicación, presentación y trabajo en equipo.
-
+                                Evento universitario en el que se presentaron
+                                diversos proyectos de la Universidad de Navojoa.
+                                Como parte de mi participación, tuve la oportunidad
+                                de presentar proyectos desarrollados durante mi
+                                formación académica.
                             </p>
 
                         </div>
@@ -771,61 +1008,108 @@
 
     </section>
 
-    <section 
-        id="contacto" 
-        class="px-6 md:px-12 py-12 border-b border-[#20391d]/40" 
-        > 
-        <div class="text-center mb-10"> 
-            <p class="uppercase text-sm tracking-widest"> 
-                Conecta conmigo 
-            </p> 
-            <h2 class="text-4xl md:text-5xl font-bold uppercase"> 
-                Contacto 
-            </h2> 
-        </div> 
-        
-        <div class="grid md:grid-cols-2 gap-6"> 
-            <div class="bg-[#e9e7c9] rounded-xl p-7"> 
-                <p class="text-sm uppercase tracking-widest"> 
-                    ¿Tienes una propuesta? 
-                </p> 
-                <h3 class="text-3xl md:text-4xl font-bold uppercase mt-2"> 
-                    Hablemos 
-                </h3> 
-                <p class="mt-4 text-gray-600 leading-relaxed"> 
-                    Si deseas conocer más sobre mis proyectos, colaborar en alguna iniciativa o ponerte en contacto conmigo, puedes encontrarme en los siguientes medios. 
-                </p> 
+    <section
+        id="contacto"
+        class="px-6 md:px-12 py-12 border-b border-[#20391d]/40"
+    >
+
+        <div class="text-center mb-10">
+
+            <p class="uppercase text-sm tracking-widest">
+                Conecta conmigo
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold uppercase">
+                Contacto
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+            <div class="bg-[#e9e7c9] rounded-xl p-7">
+
+                <p class="text-sm uppercase tracking-widest">
+                    ¿Tienes una propuesta?
+                </p>
+
+                <h3 class="text-3xl md:text-4xl font-bold uppercase mt-2">
+                    Hablemos
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Si deseas conocer más sobre mis proyectos, colaborar en
+                    alguna iniciativa o ponerte en contacto conmigo, puedes
+                    encontrarme en los siguientes medios.
+                </p>
+
             </div>
-            
-            <div class="bg-[#dfe3f5] rounded-xl p-7"> 
+
+            <div class="bg-[#dfe3f5] rounded-xl p-7">
+
                 <div class="space-y-5">
-                    <div> <p class="text-xs uppercase tracking-widest text-gray-500"> 
-                        Correo electrónico 
-                    </p> 
-                    <a href="mailto:tu-correo@ejemplo.com" class="text-lg font-semibold hover:text-[#8b9251] transition" > 
-                        issavictoriaaguilar@gmail.com 
-                    </a> 
+
+
+                    <div>
+
+                        <p class="text-xs uppercase tracking-widest text-gray-500">
+                            Correo electrónico
+                        </p>
+
+                        <a
+                            href="mailto:issavictoriaaguilar@gmail.com"
+                            class="text-lg font-semibold hover:text-[#8b9251] transition"
+                        >
+                            issavictoriaaguilar@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-xs uppercase tracking-widest text-gray-500">
+                            GitHub
+                        </p>
+
+                        <a
+                            href="https://github.com/Issa1616"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-lg font-semibold hover:text-[#8b9251] transition"
+                        >
+                            github.com/Issa1616
+                        </a>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-xs uppercase tracking-widest text-gray-500">
+                            LinkedIn
+                        </p>
+
+                        <a
+                            href="https://www.linkedin.com/in/issa-victoria-aguilar-soto"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-lg font-semibold hover:text-[#8b9251] transition"
+                        >
+                            Mi perfil profesional
+                        </a>
+
+                    </div>
+
+
                 </div>
-                <div> 
-                    <p class="text-xs uppercase tracking-widest text-gray-500"> 
-                        GitHub 
-                    </p> 
-                    <a href="https://github.com/Issa1616" target="_blank" class="text-lg font-semibold hover:text-[#8b9251] transition" > 
-                        github.com/Issa1616 
-                    </a> 
-                </div> 
-                <div> 
-                    <p class="text-xs uppercase tracking-widest text-gray-500"> 
-                        LinkedIn 
-                    </p> 
-                    <a href="#" target="_blank" class="text-lg font-semibold hover:text-[#8b9251] transition" > 
-                        Mi perfil profesional 
-                    </a> 
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-</section>
+
+            </div>
+
+        </div>
+
+    </section>
 
     <footer
         class="bg-[#8b9251] text-white px-6 md:px-10 py-7"
@@ -843,11 +1127,14 @@
 
 </div>
 
-
 <script>
 
-    const menuButton = document.getElementById('menuButton');
-    const mobileMenu = document.getElementById('mobileMenu');
+    const menuButton =
+        document.getElementById('menuButton');
+
+    const mobileMenu =
+        document.getElementById('mobileMenu');
+
 
     menuButton.addEventListener('click', () => {
 
@@ -856,7 +1143,9 @@
     });
 
 
-    const mobileLinks = mobileMenu.querySelectorAll('a');
+    const mobileLinks =
+        mobileMenu.querySelectorAll('a');
+
 
     mobileLinks.forEach(link => {
 
@@ -872,98 +1161,157 @@
     document.getElementById('year').textContent =
         new Date().getFullYear();
 
-    const listaEventos = document.getElementById('listaEventos');
-    const prevEvento = document.getElementById('prevEvento');
-    const nextEvento = document.getElementById('nextEvento');
 
-    let eventoActual = 0;
+    function crearCarrusel(
+        listaId,
+        prevId,
+        nextId
+    ) {
+
+        const lista =
+            document.getElementById(listaId);
+
+        const prev =
+            document.getElementById(prevId);
+
+        const next =
+            document.getElementById(nextId);
 
 
+        let actual = 0;
 
-    function getVisibleCards() {
 
-        return window.innerWidth >= 768 ? 2 : 1;
+        function getVisibleCards() {
 
-    }
+            return window.innerWidth >= 768
+                ? 2
+                : 1;
 
-    function moverCarrusel() {
-
-        const cards = listaEventos.children;
-
-        if (cards.length === 0) {
-            return;
         }
 
-        const anchoCard = cards[0].offsetWidth;
 
-        const gap = 24;
+        function moverCarrusel() {
 
-        const desplazamiento =
-            eventoActual * (anchoCard + gap);
+            const cards =
+                lista.children;
 
-        listaEventos.style.transform =
-            `translateX(-${desplazamiento}px)`;
 
-    }
+            if (cards.length === 0) {
+                return;
+            }
 
-    nextEvento.addEventListener('click', () => {
 
-        const totalCards =
-            listaEventos.children.length;
+            const anchoCard =
+                cards[0].getBoundingClientRect().width;
 
-        const cardsVisibles =
-            getVisibleCards();
 
-        const maximo =
-            Math.max(0, totalCards - cardsVisibles);
+            const gap = 24;
 
-        if (eventoActual < maximo) {
 
-            eventoActual++;
+            const desplazamiento =
+                actual * (anchoCard + gap);
+
+
+            lista.style.transform =
+                `translateX(-${desplazamiento}px)`;
+
+        }
+
+
+        next.addEventListener('click', () => {
+
+            const totalCards =
+                lista.children.length;
+
+
+            const cardsVisibles =
+                getVisibleCards();
+
+
+            const maximo =
+                Math.max(
+                    0,
+                    totalCards - cardsVisibles
+                );
+
+
+            if (actual < maximo) {
+
+                actual++;
+
+                moverCarrusel();
+
+            }
+
+        });
+
+
+        prev.addEventListener('click', () => {
+
+            if (actual > 0) {
+
+                actual--;
+
+                moverCarrusel();
+
+            }
+
+        });
+
+
+        window.addEventListener('resize', () => {
+
+            const totalCards =
+                lista.children.length;
+
+
+            const cardsVisibles =
+                getVisibleCards();
+
+
+            const maximo =
+                Math.max(
+                    0,
+                    totalCards - cardsVisibles
+                );
+
+
+            if (actual > maximo) {
+
+                actual = maximo;
+
+            }
+
 
             moverCarrusel();
 
-        }
+        });
 
-    });
-
-
-    prevEvento.addEventListener('click', () => {
-
-        if (eventoActual > 0) {
-
-            eventoActual--;
-
-            moverCarrusel();
-
-        }
-
-    });
-
-    window.addEventListener('resize', () => {
-
-        const totalCards =
-            listaEventos.children.length;
-
-        const cardsVisibles =
-            getVisibleCards();
-
-        const maximo =
-            Math.max(0, totalCards - cardsVisibles);
-
-        if (eventoActual > maximo) {
-
-            eventoActual = maximo;
-
-        }
 
         moverCarrusel();
 
-    });
+    }
 
-    moverCarrusel();
+    crearCarrusel(
+        'listaProyectos',
+        'prevProyecto',
+        'nextProyecto'
+    );
+
+    crearCarrusel(
+        'listaTrabajos',
+        'prevTrabajo',
+        'nextTrabajo'
+    );
+
+    crearCarrusel(
+        'listaEventos',
+        'prevEvento',
+        'nextEvento'
+    );
 
 </script>
+
 
 </body>
 </html>
